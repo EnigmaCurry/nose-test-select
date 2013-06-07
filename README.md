@@ -7,6 +7,8 @@ provides a more convenient method of selecting (including and excluding)
 tests than the built-in regex methods. Tests are selected by creating a
 file similar to a .gitignore file.
 
+[![Build Status](https://travis-ci.org/EnigmaCurry/nose-test-select.png?branch=master)](https://travis-ci.org/EnigmaCurry/nose-test-select)
+
 Example Config
 ==============
 
@@ -62,6 +64,10 @@ tests/math_tests.py:*Float
 ```
 
 Lines starting with a ```#``` symbol are treated as comments.
+
+Additional examples can be found in the 
+[tests](https://github.com/EnigmaCurry/nose-test-select/tree/master/tests)
+directory
 
 Note: Tests must still follow the regular nose naming convention. 
 Tests that don't follow this convention will be ignored even if 
