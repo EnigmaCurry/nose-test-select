@@ -15,5 +15,11 @@ setup(
     entry_points = {
         'nose.plugins': ['nose_test_select = nose_test_select.nose_test_select:NoseTestSelect']
         },
+    classifiers = [
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Testing",
+        "License :: OSI Approved :: MIT License"
+    ],
     install_requires = ['nose'],
+    test_suite='tests'
 )
