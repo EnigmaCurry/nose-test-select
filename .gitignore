@@ -1,2 +1,3 @@
 *.pyc
 nose_test_select.egg-info
+dist

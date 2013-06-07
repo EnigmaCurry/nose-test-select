@@ -10,7 +10,7 @@ setup(
     description = ".gitignore style test selection for nose (file and method name globbing)",
     license = 'MIT',
     url = "http://github.com/EnigmaCurry/nose-test-select",
-    py_modules = ['nose_test_select'],
+    packages = ['nose_test_select'],
     zip_safe = False,    
     entry_points = {
         'nose.plugins': ['nose_test_select = nose_test_select.nose_test_select:NoseTestSelect']
