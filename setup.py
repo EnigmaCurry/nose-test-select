@@ -13,7 +13,7 @@ setup(
     py_modules = ['nose_test_select'],
     zip_safe = False,    
     entry_points = {
-        'nose.plugins': ['nose_test_select = nose_test_select:NoseTestSelect']
+        'nose.plugins': ['nose_test_select = nose_test_select.nose_test_select:NoseTestSelect']
         },
     install_requires = ['nose'],
 )
