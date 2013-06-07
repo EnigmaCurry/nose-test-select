@@ -29,7 +29,7 @@ A test selection config file might look like:
 
 ```
 [exclude]
-math_tests:*Integer*
+math_tests.py:*Integer*
 tests/not_working/*
 
 [include]
