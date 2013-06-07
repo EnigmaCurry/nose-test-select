@@ -3,9 +3,9 @@ Nose-Test-Select
 
 nose-test-select is a
 [Nose](http://somethingaboutorange.com/mrl/projects/nose) plugin that
-provides a more powerful method of selecting (including and excluding)
-tests than the built-in methods. Tests are selected by creating a file
-similar to a .gitignore file.
+provides a more convenient method of selecting (including and excluding)
+tests than the built-in regex methods. Tests are selected by creating a
+file similar to a .gitignore file.
 
 Example Config
 ==============
@@ -29,7 +29,7 @@ A test selection config file might look like:
 
 ```
 [exclude]
-math_tests:*Integer*
+tests/math_tests.py:*Integer*
 tests/not_working/*
 
 [include]
