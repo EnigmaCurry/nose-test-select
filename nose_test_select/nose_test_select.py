@@ -79,7 +79,7 @@ class NoseTestSelect(Plugin):
         for pattern in self.patterns['exclude']:
             file_pattern, method_pattern = pattern.split(':', 1)
             if fnmatch.fnmatch(method_file, file_pattern) and \
-               fnmatch.fnmatch(method_name, method_pattern):
+               fnmatch.fnmatch(class_method_name, method_pattern):
                 return False
 
         return None

@@ -70,6 +70,15 @@ class NoseTestSelectTests(unittest.TestCase):
              'module_test2.submodule_test1.test1.Tester.method_test2',
              'module_test2.submodule_test1.test2.Tester.method_test2']))
         
+    def testExcludeModuleMethod(self):
+        tests = self.runnyNose('nosetests -v --test-select-config=exclude_module_method.cfg suite2')
+        self.assertEquals(tests, set([
+            'sstable_generation_loading_test.TestSSTableGenerationAndLoading.sstableloader_compression_snappy_to_deflate_test',
+'sstable_generation_loading_test.TestSSTableGenerationAndLoading.sstableloader_compression_snappy_to_none_test',
+'sstable_generation_loading_test.TestSSTableGenerationAndLoading.sstableloader_compression_snappy_to_snappy_test',
+'sstable_generation_loading_test.TestSSTableGenerationAndLoading.sstableloader_compression_none_to_snappy_test'
+        ]))
+
 
     def runnyNose(self, cmd):
         """run nosetests, return a list of the tests that ran"""
