@@ -31,7 +31,7 @@ class NoseTestSelect(Plugin):
         self.options = options
         
         if options.where:
-            cwd = options.where
+            cwd = options.where[0]
         else:
             cwd = os.getcwd()            
 
